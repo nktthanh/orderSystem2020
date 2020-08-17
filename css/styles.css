@@ -42,6 +42,9 @@ body {
   max-width: 95%;
 }
 
+.inputField {
+  width: 60%;
+}
 
 /*
  * Header
