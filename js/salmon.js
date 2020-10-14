@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 const filRate = 0.45;
 const chuRate = 0.7;
-const usageRate = 520;
+const usageRate = 510;
 
 $("button").click(function() {
   location.reload();
