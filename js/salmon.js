@@ -4,8 +4,8 @@ $(document).ready(function() {
   $("input").val("0");
 });
 
-const filRate = 0.45;
-const chuRate = 0.7;
+const filRate = 0.62;
+const chuRate = 0.83;
 const usageRate = 510;
 
 $("button").click(function() {
