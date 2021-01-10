@@ -1,212 +1,221 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <title>Order</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
 
-    <!-- Bootstrap core CSS -->
-      <script src="https://kit.fontawesome.com/9c5ef25de4.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Order</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
 
-    <!-- Favicons -->
-<meta name="theme-color" content="#563d7c">
+  <!-- Bootstrap core CSS -->
+  <script src="https://kit.fontawesome.com/9c5ef25de4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#563d7c">
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-    <h3 class="masthead-brand">KOKORO Order</h3>
-    <nav class="nav nav-masthead justify-content-center">
-      <a class="nav-link active" href="#">Salmon</a>
-      <a class="nav-link" href="#">Vegetables</a>
-      <a class="nav-link" href="#">Jiahe</a>
-    </nav>
-  </div>
-  </header>
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">KOKORO Order</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link active" href="#">Salmon</a>
+          <a class="nav-link" href="#">Vegetables</a>
+          <a class="nav-link" href="#">Jiahe</a>
+        </nav>
+      </div>
+    </header>
 
-  <main role="main" class="inner cover">
-    <div class="toTheLeft row">
-      <div class="col-lg-3 col-md-3 col-sm-12">
-        <div class="rawInput row">
-          <div class="inven col-12">
-            <h4>Inventory info</h4>
+    <main role="main" class="inner cover">
+      <div class="toTheLeft row">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="rawInput row">
+            <div class="inven col-12">
+              <h4>Inventory info</h4>
+            </div>
           </div>
-        </div>
 
-        <div class="rawInput row">
-          <div class="col-6">
-            Fillet (kg)
+          <div class="rawInput row">
+            <div class="col-6">
+              Fillet (kg)
+            </div>
+            <div class="col-6">
+              <input type="text" name="fillet" class="inputField">
+            </div>
           </div>
-          <div class="col-6">
-            <input type="text" name="fillet" class="inputField">
+          <div class="rawInput row">
+            <div class="col-6">
+              Chunks (kg)
+            </div>
+            <div class="col-6">
+              <input type="text" name="chunks" class="inputField">
+            </div>
           </div>
+          <div class="rawInput row">
+            <button type="button" class="centered btn btn-light">Refresh</button>
+          </div>
+
         </div>
-        <div class="rawInput row">
-          <div class="col-6">
-            Chunks (kg)
+        <div class="col-lg-9 col-md-9 col-sm-12">
+          <div class="titleInput rawInput row">
+            <div class="col-2">
+              <h4>Day of Week</h4>
+            </div>
+            <div class="col-5">
+
+              <h4>Revenue</h4>
+            </div>
+            <div class="col-5">
+              <h4>Salmon (kg) to Order</h4>
+
+            </div>
           </div>
-          <div class="col-6">
-            <input type="text" name="chunks" class="inputField">
+          <div class="rawInput row">
+            <div class="col-2">
+              Mon
+            </div>
+            <div class="col-5">
+              <input id="monRev" type="number" name="monRev" class="inputField">
+            </div>
+            <div class="col-5" name="toCutMon">
+              <p id="toCutMon">
+                NaN
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="rawInput row">
-          <button type="button" class="centered btn btn-light">Refresh</button>
+          <div class="rawInput row">
+            <div class="col-2">
+              Tue<i class="fas fa-check"></i>
+            </div>
+            <div class="col-5">
+              <input id="tueRev" type="number" name="tueRev" class="inputField">
+            </div>
+            <div class="col-5" name="toCutTue">
+              <p id="toCutTue">
+                NaN
+              </p>
+            </div>
+          </div>
+          <div class="rawInput row">
+            <div class="col-2">
+              Wed
+            </div>
+            <div class="col-5">
+              <input id="wedRev" type="number" name="wedRev" class="inputField">
+            </div>
+            <div class="col-5" name="toCutWed">
+              <p id="toCutWed">
+                NaN
+              </p>
+            </div>
+          </div>
+          <div class="rawInput row">
+            <div class="col-2">
+              Thu
+            </div>
+            <div class="col-5">
+              <input id="thuRev" type="number" name="thuRev" class="inputField">
+            </div>
+            <div class="col-5" name="toCutThu">
+              <p id="toCutThu">
+                NaN
+              </p>
+            </div>
+          </div>
+          <div class="rawInput row">
+            <div class="col-2">
+              Fri
+            </div>
+            <div class="col-5">
+              <input id="friRev" type="number" name="friRev" class="inputField">
+            </div>
+            <div class="col-5" name="toCutFri">
+              <p id="toCutFri">
+                NaN
+              </p>
+            </div>
+          </div>
+          <div class="rawInput row">
+            <div class="col-2">
+              Sat
+            </div>
+            <div class="col-5">
+              <input id="satRev" type="number" name="satRev" class="inputField">
+            </div>
+            <div class="col-5" name="toCutSat">
+              <p id="toCutSat">
+                NaN
+              </p>
+            </div>
+          </div>
+          <div class="rawInput row">
+            <div class="col-2">
+              Sun
+            </div>
+            <div class="col-5">
+              <input id="sunRev" type="number" name="sunRev" class="inputField">
+            </div>
+            <div class="col-5" name"toCutTotal">
+              <p id="toCutTotal">
+                <strong>Total Amount: <span id="sumOrder">NaN</span></strong>
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </div>
-      <div class="col-lg-9 col-md-9 col-sm-12">
-        <div class="titleInput rawInput row">
-          <div class="col-2">
-          <h4>Day of Week</h4>
-          </div>
-          <div class="col-5">
 
-            <h4>Revenue</h4>
-          </div>
-          <div class="col-5">
-            <h4>Salmon (kg) to Order</h4>
-
-          </div>
-        </div>
-        <div class="rawInput row">
-          <div class="col-2">
-            Mon
-          </div>
-          <div class="col-5">
-            <input id="monRev" type="number" name="monRev" class="inputField">
-          </div>
-          <div class="col-5" name="toCutMon">
-            <p id="toCutMon">
-              NaN
-            </p>
-          </div>
-        </div>
-        <div class="rawInput row">
-          <div class="col-2">
-            Tue<i class="fas fa-check"></i>
-          </div>
-          <div class="col-5">
-            <input id="tueRev" type="number" name="tueRev" class="inputField">
-          </div>
-          <div class="col-5" name="toCutTue">
-            <p id="toCutTue">
-              NaN
-            </p>
-          </div>
-        </div>
-        <div class="rawInput row">
-          <div class="col-2">
-            Wed
-          </div>
-          <div class="col-5">
-            <input id="wedRev" type="number" name="wedRev" class="inputField">
-          </div>
-          <div class="col-5" name="toCutWed">
-            <p id="toCutWed">
-              NaN
-            </p>
-          </div>
-        </div>
-        <div class="rawInput row">
-          <div class="col-2">
-            Thu
-          </div>
-          <div class="col-5">
-            <input id="thuRev" type="number" name="thuRev" class="inputField">
-          </div>
-          <div class="col-5" name="toCutThu">
-            <p id="toCutThu">
-              NaN
-            </p>
-          </div>
-        </div>
-        <div class="rawInput row">
-          <div class="col-2">
-            Fri
-          </div>
-          <div class="col-5">
-            <input id="friRev" type="number" name="friRev" class="inputField">
-          </div>
-          <div class="col-5" name="toCutFri">
-            <p id="toCutFri">
-              NaN
-            </p>
-          </div>
-        </div>
-        <div class="rawInput row">
-          <div class="col-2">
-            Sat
-          </div>
-          <div class="col-5">
-            <input id="satRev" type="number" name="satRev" class="inputField">
-          </div>
-          <div class="col-5" name="toCutSat">
-            <p id="toCutSat">
-              NaN
-            </p>
-          </div>
-        </div>
-        <div class="rawInput row">
-          <div class="col-2">
-            Sun
-          </div>
-          <div class="col-5">
-            <input id="sunRev" type="number" name="sunRev" class="inputField">
-          </div>
-          <div class="col-5" name"toCutTotal">
-            <p id="toCutTotal">
-             <strong>Total Amount: <span id="sumOrder">NaN</span></strong>
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- <h1 class="cover-heading">Cover your page.</h1>
+      <!-- <h1 class="cover-heading">Cover your page.</h1>
     <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
     <p class="lead">
       <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
     </p> -->
-  </main>
+    </main>
 
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>KOKORO 2020</p>
-    </div>
-  </footer>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="js/salmon.js" charset="utf-8"></script>
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>KOKORO 2020</p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="js/salmon.js" charset="utf-8"></script>
 </body>
+
 </html>
