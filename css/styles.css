@@ -14,7 +14,8 @@ a:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
 }
@@ -43,7 +44,7 @@ body {
 }
 
 .inputField {
-  width: 60%;
+  width: 100%;
 }
 
 /*
@@ -70,7 +71,7 @@ body {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-link+.nav-link {
   margin-left: 1rem;
 }
 
@@ -83,18 +84,18 @@ body {
   .masthead-brand {
     float: left;
   }
+
   .nav-masthead {
     float: right;
   }
 }
-
-
 /*
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
+  padding: 10px 0;
 }
+
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
@@ -107,7 +108,8 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
-.rawInput{
+
+.rawInput {
   margin: 10px 0;
 }
 
@@ -121,7 +123,7 @@ h4 {
 
 .toTheLeft {
   text-align: left;
-  margin: 5% 10%;
+  margin: 10px 0;
 }
 
 .inven {
@@ -136,6 +138,23 @@ h4 {
   color: #39ff14;
   display: none;
 }
+
 /* #toCutMon, #toCutTue, #toCutWed, #toCutThu, #toCutFri, #toCutSat, #toCutTotal {
   text-align: left;
 } */
+
+/* Duy modify */
+@media (max-width: 500px) {
+  .cover {
+    padding: 10px 0;
+  }
+
+  .rawInput {
+    margin: 10px 0;
+  }
+
+  .toTheLeft {
+    text-align: left;
+    margin: 10px 0;
+  }
+}
